@@ -50,12 +50,12 @@ export default class ChatGPT {
       cacheOptions
     );
     this.chatOption = {};
-    // this.test();
   }
   async test() {
     const response = await this.chatGPT.sendMessage("hello");
     console.log("response test: ", response);
   }
+
   async getChatGPTReply(content, contactId) {
     const data = await this.chatGPT.sendMessage(
       content,
